@@ -24,7 +24,7 @@ let count = 1;
 
 const nextQuote = () => {
   count++;
-  if (count === 8) count = 0;
+  if (count === quoteArray.length) count = 0;
   let quote = document.getElementById("quote");
   let philosopher = document.getElementById("philosopher");
   quote.innerText = quoteArray[count];
