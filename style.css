@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .quote-container {
@@ -38,6 +39,7 @@ body {
   border: none;
   text-align: center;
   transition: 0.2s all ease-in-out;
+  overflow: auto;
 }
 
 h2 {
@@ -57,4 +59,14 @@ button {
 
 button:hover {
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1200px) {
+  .quote-container {
+    overflow: auto;
+  }
+
+  p {
+    padding: 0 7rem;
+  }
 }
